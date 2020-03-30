@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="form_for_students.php" method="post">
+    <fieldset style ="width: 350px;
+    text-align: left;
+    border-radius: 4px;"><legend><font size="10px" >form_for_faculty</font></legend>
+	Firstname:-<br>
+ <input type="text"  name="firstname"  required  placeholder="firstname"><br>
+ Lastname:-<br>
+ <input type="text"  name="Lastname"  required  placeholder="Lastname"><br>
+ Enter the collage name<br> 
+ you are working:-<br>
+ <input type="text"  name="collage"  required  placeholder="collage name"><br>
+ Enter your Email:-<br>
+ <input type="email" id="email" name="email"  required  placeholder="Email"><br>
+ Password:-(minimum 8 length required)<br>
+ <input type="password" id="pass" name="password"  required  minlength="8" required placeholder="password"><br>
+ type of degree:-<br>
+ <input type="text"  name="degree"  required  placeholder="type"><br>
+Enter the collage name<br>
+ you passedout:-<br>
+ <input type="text"  name="collagep" required placeholder="collage name"><br>
+ Gender:-<br>
+ <input type="radio" id="male" name="gender" value="m"  required >
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="f"  required >
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="o"  required >
+  <label for="other">Other</label><br>
+  phone no:-<br>
+  <select name="phonecode">
+    <option selected hidden value=""  required >select code</option>
+  	<option value="91">91</option>
+    <option value="92">92</option>
+    <option value="93">93</option>
+    <option value="94">94</option>
+    <option value="95">95</option>
+  </select>
+  <input type="phone" name="phone" placeholder="794690********"><br>
+  Address:-<br>
+  <textarea rows="8" cols="50" name="Address" value="Address"  required  ></textarea><br><br>
+  <button type="submit" value="Submit">Submit</button>
+  <button type="reset" value="Reset">Reset</button>
+</fieldset>
+</form>
+
+</body>
+</html>
