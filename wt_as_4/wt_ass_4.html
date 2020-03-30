@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<fieldset style ="width: 350px;
+    text-align: center;
+    border-radius: 4px;
+      background-color:brown; margin:auto" ><legend align="center"><b><font size="10px" color="red" >FORM</font></b></legend>
+<form>
+	FIRST NAME:<br>
+	<input type="text" id="fname"   name ="fname" required placeholder="firstname" onblur="myFunction()"><br>
+	<br>
+	LAST NAME:<br>
+	<input type="text" id="kname" name ="kname" required  placeholder="Lastname"  onblur="myFunction()"><br>
+	<br>
+	FIELD NAME:<br>
+	<input type="text" id="iname"  name ="iname" required  placeholder="field name" onblur="myFunction()"><br>
+	<br>
+	COLLAGE NAME:<br>
+	<input type="text" id="zname" name ="zname" required  placeholder="collage name" onblur="myFunction()"><br>
+	<br>
+	<button type="submit" form="nameform" value="Submit" onblur="myFunction1()">Submit</button>
+	<br><br>
+<h3>After fill the form click on submit button and then  click outside the field.</h3>
+</form>
+</fieldset>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+  var k = document.getElementById("kname");
+  k.value = k.value.toUpperCase();
+  var i = document.getElementById("iname");
+  i.value = i.value.toUpperCase();
+  var z = document.getElementById("zname");
+  z.value = z.value.toUpperCase();
+}
+function myFunction1() {
+  alert("The form is finished.");
+}
+
+</script>
+</body>
+
+</html>
